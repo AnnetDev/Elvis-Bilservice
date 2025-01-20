@@ -73,24 +73,6 @@ html {
     font-display: swap;
 }
 
-/* $roboto-font: "Roboto", Arial, sans-serif;
-$anton-font: "Anton SC", Arial Black, sans-serif;
-
-$desktop-width: 1200px;
-$tablet-width: 768px;
-$mobile-width-only: 767px;
-
-#F5F7E0
-Pale Lemon 
-White
-#C06014
-Amber Orange
-#114D2E
-Dark Emerald Green
-#1C1C1C Rich Graphite Gray
-#D4B057
-Light Gold */
-
 body {
     margin: 0 auto;
     font-family: "Roboto", Arial, sans-serif;
@@ -115,7 +97,7 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     body {
         font-size: 28px;
         line-height: 33px;
@@ -152,7 +134,7 @@ main {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .container {
         padding: 0 40px;
     }
@@ -175,7 +157,7 @@ main {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .page-header {
         padding: 20px 0;
     }
@@ -200,7 +182,7 @@ main {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .header-logotype {
         font-size: 40px;
         line-height: 60px;
@@ -231,7 +213,7 @@ main {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .header-menu {
         font-size: 24px;
         line-height: 28px;
@@ -276,13 +258,13 @@ main {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .page-footer {
         padding: 20px 0;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .footer-content-wrapper {
         display: flex;
         flex-flow: row wrap;
@@ -312,7 +294,7 @@ main {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .footer-logotype {
         display: flex;
         font-family: "Anton SC", Arial Black, sans-serif;
@@ -328,7 +310,7 @@ main {
     justify-content: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .footer-nav {
         margin: 0 20px;
     }
@@ -354,7 +336,7 @@ main {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .footer-menu {
         font-size: 20px;
         line-height: 23px;
@@ -389,11 +371,12 @@ main {
     padding: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .social-list {
         margin: 0;
     }
 }
+
 .social-list-link {
     display: flex;
     margin: 0;
@@ -407,7 +390,7 @@ main {
         margin: 0;
         width: 20px;
         height: 20px;
-    
+
     }
 }
 
@@ -428,9 +411,102 @@ main {
     justify-content: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .policy {
         font-size: 12px;
         line-height: 14px;
     }
+}
+
+/* HERO */
+
+.hero {
+    margin: 0;
+    padding: 20px 0 0;
+    background-color: #F5F7E0;
+}
+
+.hero-heading-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 35px;
+    margin: 0 0 20px;
+}
+
+.hero-heading {
+    font-family: "Anton SC", Arial Black, sans-serif;
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero-heading:first-of-type {
+    color: #114D2E;
+    width: 250px;
+}
+
+.hero-image {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0;
+        padding: 20px 0;
+        justify-content: center;
+    }
+    .hero .container {
+        justify-content: center;
+        margin: 0;
+
+    }
+
+    .hero-heading-wrapper {
+        width: 300px;
+    }
+
+    .hero-image {
+        margin: 0 25px 0 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero {
+        padding: 30px 40px;
+        justify-content: space-between;
+    }
+
+    .hero-image {
+        border-radius: 30px;
+        margin: 0;
+    }
+
+    .hero-heading {
+        font-size: 54px;
+        line-height: 81px;
+    }
+    .hero .container {
+        padding: unset;
+    }
+    .hero-heading-wrapper {
+        width: 515px;
+    }
+    .hero-heading:first-of-type {
+        width: 515px;
+    }
+
 }
