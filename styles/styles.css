@@ -720,18 +720,6 @@ h2 {
     opacity: 70%;
 }
 
-.header-logotype:active,
-.header-menu-item:active,
-.header-menu-link:active,
-.footer-logotype:active,
-.footer-menu-item:active,
-.footer-menu-link:active,
-.social-list-link:active,
-.social-list-item:active,
-.policy:active {
-    opacity: 40%;
-}
-
 .header-logotype:focus,
 .header-menu-item:focus,
 .header-menu-link:focus,
@@ -762,6 +750,19 @@ h2 {
     outline: #C06014 solid 1px;
     outline-offset: 5px;
     border-color: transparent;
+}
+
+.header-logotype:active,
+.header-menu-item:active,
+.header-menu-link:active,
+.footer-logotype:active,
+.footer-menu-item:active,
+.footer-menu-link:active,
+.social-list-link:active,
+.social-list-item:active,
+.policy:active {
+    opacity: 50%;
+    outline: none;
 }
 
 /* disabled?  */
