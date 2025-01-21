@@ -106,6 +106,7 @@ body {
 
 main {
     flex-grow: 1;
+    background-color: #F5F7E0;
 }
 
 .visually-hidden {
@@ -125,7 +126,7 @@ h2 {
     margin: 0 0 10px;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0;
     font-size: 20px;
     line-height: 23px;
@@ -691,6 +692,98 @@ h2 {
     .main-page-gallery .bil1 {
         height: 400px;
         width: auto;
+    }
+}
+
+/* PAGE_ABOUT */
+
+/* HISTORY */
+.history {
+    background-color: #F5F7E0;
+    padding: 0 0 20px;
+}
+
+.Elvis-image {
+    display: block;
+    margin: 0 calc((100% - 320px) / 2) 15px;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.history-description {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    width: 290px;
+}
+
+.history-description p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.history .container {
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .history {
+        padding: 20px 0;
+    }
+
+    .history .container {
+        flex-flow: row wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .Elvis-image {
+        margin: 0;
+    }
+
+    .history-description {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .history {
+        padding: 30px 0;
+    }
+
+    .Elvis-image {
+        border-radius: 30px;
+    }
+
+    .history-description {
+        width: 602px;
+        gap: 30px;
+    }
+
+    .history .container {
+        gap: 80px;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .history-description p {
+        font-size: 24px;
+        line-height: 28px;
     }
 }
 
