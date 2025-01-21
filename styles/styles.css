@@ -232,12 +232,14 @@ h2 {
     gap: 15px;
     font-size: 22px;
     line-height: 26px;
+    width: 290px;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1439px) {
     .header-menu {
         font-size: 23px;
         line-height: 27px;
+        width: unset;
     }
 }
 
@@ -245,6 +247,7 @@ h2 {
     .header-menu {
         font-size: 24px;
         line-height: 28px;
+        width: unset;
     }
 }
 
@@ -784,6 +787,120 @@ h3 {
     .history-description p {
         font-size: 24px;
         line-height: 28px;
+    }
+}
+
+/* TEAM */
+.team {
+    padding: 20px 0;
+    display: flex;
+    flex-flow: column wrap;
+    border-top: solid 1px #1C1C1C;
+}
+
+.team .container {
+    align-items: center;
+}
+
+.team-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+
+.master-image {
+    display: block;
+    margin: 0 calc((100% - 320px) / 2) 10px;
+    padding: 0;
+}
+
+.master-info h3 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0 0 5px;
+    letter-spacing: 0;
+}
+
+.master-info h4 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 0 10px;
+    letter-spacing: 0;
+}
+
+.master-info p {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.team-list-item {
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.item-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 290px;
+}
+
+@media (min-width: 768px) {
+    .team-list {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .master-image {
+        margin: 0 0 10px;
+        border-radius: 30px;
+    }
+
+    .item-wrapper {
+        width: 320px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .master-info h3 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .master-info h4 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .master-info p {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .item-wrapper {
+        flex-flow: row nowrap;
+        width: 660px;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .team-list {
+        row-gap: 20px;
     }
 }
 
