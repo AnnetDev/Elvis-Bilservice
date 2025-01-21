@@ -904,6 +904,43 @@ h3 {
     }
 }
 
+/* AUTOSERVICE-GALLERY */
+.autoservice {
+    padding: 20px 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.autoservice-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.autoservice-image {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .autoservice-wrapper {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 700px;
+    } 
+}
+
+@media (min-width: 1440px) {
+    .autoservice-wrapper {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: unset;
+    } 
+}
 /* HOVER/ACTIVE/FOCUS */
 
 .header-logotype,
