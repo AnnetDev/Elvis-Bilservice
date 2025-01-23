@@ -11,7 +11,7 @@ html {
 
 @font-face {
     font-family: "Roboto";
-    font-style: bold;
+    font-style: normal;
     font-weight: 700;
     src: url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2");
     font-display: swap;
@@ -19,7 +19,7 @@ html {
 
 @font-face {
     font-family: "Roboto";
-    font-style: bold;
+    font-style: normal;
     font-weight: 700;
     src: url("../fonts/Roboto/Roboto-Bold.woff") format("woff");
     font-display: swap;
@@ -27,7 +27,7 @@ html {
 
 @font-face {
     font-family: "Roboto";
-    font-style: medium;
+    font-style: normal;
     font-weight: 500;
     src: url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2");
     font-display: swap;
@@ -35,7 +35,7 @@ html {
 
 @font-face {
     font-family: "Roboto";
-    font-style: medium;
+    font-style: normal;
     font-weight: 500;
     src: url("../fonts/Roboto/Roboto-Medium.woff") format("woff");
     font-display: swap;
@@ -135,7 +135,6 @@ h2 {
 @media (min-width: 768px) {
     h2 {
         font-size: 25px;
-        line-height: auto;
     }
 }
 
@@ -325,7 +324,6 @@ section {
         display: flex;
         font-family: "Anton SC", Arial Black, sans-serif;
         font-size: 22px;
-        line-height: auto;
         letter-spacing: 2px;
         justify-content: center;
         text-decoration: none;
