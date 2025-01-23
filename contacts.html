@@ -83,10 +83,41 @@
 
                         <source type="image/jpg" media="(min-width: 1440px)"
                             srcset="ima/map@1x.jpg 1x, images/map@2x.jpg 2x" width="564" height="400">
-                        <img class="map-image" src="images/map@1x.jpg" srcset="images/map@2x.jpg 2x"
-                            width="320" height="289" alt="Chevrolet Bel Air ">
+                        <img class="map-image" src="images/map@1x.jpg" srcset="images/map@2x.jpg 2x" width="320"
+                            height="289" alt="Chevrolet Bel Air ">
                     </picture>
                 </div>
+            </div>
+        </section>
+
+        <section class="contacts-form">
+            <div class="container">
+                <h2 class="contacts-form-heading">Har du några frågor eller önskar du komma i kontakt med oss?</h2>
+                <p class="contacts-form-description">
+                    Vänligen fyll i formuläret nedan, så återkommer vi till er så snart som möjligt.
+                </p>
+                <form action="" method="post">
+                    <fieldset class="form__fieldset">
+                        <div class="form__group">
+                            <input class="form__input form__input-phone" type="tel" name="phone"
+                                placeholder="Telefonnumer" id="input-phone" required>
+                            <label class="form__label visually-hidden" for="input-phone">Telefonnumer</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input class="form__input form__input-name" type="text" name="email" placeholder="Email"
+                                id="input-email" required>
+                            <label class="form__label visually-hidden" for="input-email">Email</label>
+                        </div>
+
+                        <div class="form__group">
+                            <textarea class="form__input textarea" type="text" name="text" id="text" placeholder="Skriv ditt medelande"></textarea>
+                            <label class="form__label visually-hidden" for="text">text</label>
+                        </div>
+
+                        <button class="button form__button" type="submit">Skicka</button>
+                    </fieldset>
+                </form>
             </div>
         </section>
     </main>

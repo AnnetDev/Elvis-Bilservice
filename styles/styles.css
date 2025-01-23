@@ -78,7 +78,6 @@ body {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 14px;
     line-height: 16px;
-    /* background-color: #F5F7E0; */
     color: #1C1C1C;
     min-width: 320px;
     max-width: 1440px;
@@ -372,7 +371,7 @@ section {
     letter-spacing: 0;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .footer-menu {
         font-size: 14px;
         line-height: 16px;
@@ -1286,6 +1285,9 @@ h3 {
 
 .example {
     position: relative;
+    padding: 10px 0;
+    border-bottom: solid 1px #1C1C1C;
+
 }
 
 .price-icon {
@@ -1682,8 +1684,6 @@ h3 {
 
 /* CONTACTS */
 
-.contacts {}
-
 .contacts .container {
     width: 320px;
     align-items: center;
@@ -1791,6 +1791,7 @@ h3 {
     .contacts-heading {
         margin: 0 0 20px;
     }
+
     .contacts .container {
         width: 768px;
     }
@@ -1865,12 +1866,95 @@ h3 {
         font-size: 24px;
         line-height: 26px;
     }
+
+    .contacts-list-phone::after,
+    .contacts-list-email::after {
+        width: 21px;
+        height: 21px;
+    }
 }
 
 
+/* CONTACTS-FORM */
+.contacts-form {
+    background-color: #114D2ED6;
+    min-width: 320px;
+    margin: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.contacts-form .container {
+    width: 320px;
+    align-items: center;
+}
 
+.contacts-form-heading {
+    text-align: center;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 28px;
+}
 
+.contacts-form-description {
+    text-align: center;
+    display: block;
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+
+}
+
+textarea::placeholder {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+@media (min-width: 768px) {
+    .contacts-form .container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contacts-form {
+        padding: 60px 30px;
+    }
+    .contacts-form .container {
+        width: 1440px;
+    }
+
+    .form__fieldset {
+        flex-direction: column;
+        gap: 20px;
+    }    
+
+    .form__button {
+        width: 360px;
+    }
+
+.textarea {
+        min-height: 150px;
+    }
+
+    .contacts-form-heading {
+        width: 1100px;
+        font-size: 46px;
+        line-height: 48px;
+        margin: 0 0 30px;
+    }
+    
+    .contacts-form-description {
+        width: 600px;
+        font-size: 24px;
+        line-height: 26px;
+        margin: 0 0 30px;
+    }
+}
 
 /* HOVER/ACTIVE/FOCUS */
 
