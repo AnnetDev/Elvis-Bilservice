@@ -295,7 +295,7 @@ section {
 
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
     .page-footer {
         padding: 15px 0;
     }
@@ -1495,4 +1495,142 @@ h3 {
         font-size: 24px;
         line-height: 26px;
     }
+}
+
+/* REVIEWS */
+
+/* CARS */
+.cars {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+
+.cars .container {
+    width: 320px;
+    align-items: center;
+}
+
+.cars-heading {
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+.cars-subheading {
+    margin: 0 0 15px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.cars-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 290px;
+}
+
+.cars-list-image {
+    display: block;
+    margin: 0 calc((100% - 320px) / 2) 10px;
+    padding: 0;
+}
+
+.cars-caption p {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.cars-caption {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+}
+
+
+@media (min-width: 768px) {
+
+    .cars .container {
+        width: 768px;
+    }
+
+    .cars-caption p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .cars-list {
+        display: flex;
+        flex-flow: row wrap;
+        width: 680px;
+        gap: 40px;
+    }
+
+    .cars-list-item {
+        width: 320px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .cars-list-image {
+        margin: 0 0 10px;
+        height: 200px;
+        width: 320px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+    }
+
+    .cars-list-image-jaguar {
+        width: 299px;
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .cars-list-image,
+    .cars-list-image-jaguar {
+        width: 500px;
+        height: 320px;
+    }
+
+    .cars .container {
+        width: 1440px;
+    }
+
+    .cars-caption p {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .cars-list {
+        display: flex;
+        flex-flow: row wrap;
+        width: 1200px;
+        gap: 60px;
+        justify-content: center;
+    }
+
+    .cars-list-item {
+        width: 500px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .cars-subheading {
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 400;
+        margin: 0 0 20px;
+    }
+
 }
