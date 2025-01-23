@@ -90,7 +90,7 @@ body {
 }
 
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
     body {
         font-size: 20px;
         line-height: 24px;
@@ -189,7 +189,7 @@ section {
     justify-content: center;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
     .page-header {
         padding: 15px 0;
     }
@@ -213,7 +213,7 @@ section {
     text-decoration: none;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
     .header-logotype {
         font-size: 36px;
         line-height: 54px;
@@ -372,7 +372,7 @@ section {
     letter-spacing: 0;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px){
     .footer-menu {
         font-size: 14px;
         line-height: 16px;
@@ -961,79 +961,6 @@ h3 {
         max-width: unset;
     }
 }
-
-/* HOVER/ACTIVE/FOCUS */
-
-.header-logotype,
-.header-menu-item,
-.header-menu-link,
-.footer-logotype,
-.footer-menu-item,
-.footer-menu-link,
-.social-list-link,
-.social-list-item,
-.policy {
-    transition: opacity ease 0.3s;
-}
-
-.header-logotype:hover,
-.header-menu-item:hover,
-.header-menu-link:hover,
-.footer-logotype:hover,
-.footer-menu-item:hover,
-.footer-menu-link:hover,
-.social-list-link:hover,
-.social-list-item:hover,
-.policy:hover {
-    opacity: 70%;
-}
-
-.header-logotype:focus,
-.header-menu-item:focus,
-.header-menu-link:focus,
-.footer-logotype:focus,
-.footer-menu-item:focus,
-.footer-menu-link:focus,
-.social-list-link:focus,
-.social-list-item:focus,
-.policy:focus,
-.header-logotype:focus-visible,
-.header-menu-item:focus-visible,
-.header-menu-link:focus-visible,
-.footer-logotype:focus-visible,
-.footer-menu-item:focus-visible,
-.footer-menu-link:focus-visible,
-.social-list-link:focus-visible,
-.social-list-item:focus-visible,
-.policy:focus-visible,
-.header-logotype:focus-within,
-.header-menu-item:focus-within,
-.header-menu-link:focus-within,
-.footer-logotype:focus-within,
-.footer-menu-item:focus-within,
-.footer-menu-link:focus-within,
-.social-list-link:focus-within,
-.social-list-item:focus-within,
-.policy:focus-visible {
-    outline: #C06014 solid 1px;
-    outline-offset: 5px;
-    border-color: transparent;
-}
-
-.header-logotype:active,
-.header-menu-item:active,
-.header-menu-link:active,
-.footer-logotype:active,
-.footer-menu-item:active,
-.footer-menu-link:active,
-.social-list-link:active,
-.social-list-item:active,
-.policy:active {
-    opacity: 50%;
-    outline: none;
-}
-
-/* disabled?  */
 
 /* SERVICES */
 .main-services .container {
@@ -1638,6 +1565,7 @@ h3 {
 .reviews {
     border-top: solid 1px #1C1C1C;
 }
+
 .reviews .container {
     align-items: center;
     width: 320px;
@@ -1676,7 +1604,7 @@ h3 {
     background-image: url(../images/icons/reviews-icon.svg);
     width: 42px;
     height: 42px;
-    left: 30px; 
+    left: 30px;
 }
 
 .name {
@@ -1707,11 +1635,13 @@ h3 {
         align-items: center;
         width: 768px;
     }
+
     .reviews-list {
         flex-flow: row wrap;
         width: 750px;
         gap: 20px;
     }
+
     .reviews-list-item {
         width: 235px;
     }
@@ -1723,14 +1653,17 @@ h3 {
         align-items: center;
         width: 1440px;
     }
+
     .reviews-list {
         flex-flow: row wrap;
         width: 1200px;
         gap: 30px;
     }
+
     .reviews-list-item {
         width: 300px;
     }
+
     .name {
         font-size: 28px;
         line-height: 30px;
@@ -1745,4 +1678,291 @@ h3 {
         font-size: 18px;
         line-height: 20px;
     }
+}
+
+/* CONTACTS */
+
+.contacts {}
+
+.contacts .container {
+    width: 320px;
+    align-items: center;
+}
+
+.contacts-heading {
+    align-self: center;
+    text-align: center;
+}
+
+.contacts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 25px;
+}
+
+.contacts-list-heading {
+    display: block;
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.contacts-list-description {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.contacts-list-phone,
+.contacts-list-email,
+.contacts-list-facebook,
+.contacts-list-instagramm {
+    text-decoration: none;
+    color: #1C1C1C;
+    display: block;
+    padding: 0 0 0 30px;
+    position: relative;
+    margin: 0;
+
+}
+
+.contacts-list-phone::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(../images/icons/phone.svg) no-repeat;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contacts-list-email::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(../images/icons/mail.svg) no-repeat;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contacts-list-facebook,
+.contacts-list-instagramm {
+    margin: 0 0 20px;
+}
+
+.contacts-list-facebook::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/fb-logo.svg) no-repeat;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.contacts-list-instagramm::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/instagramm-logo.svg) no-repeat;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.map-image {
+    display: block;
+    margin: 0 calc((100% - 320px) / 2);
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .contacts-heading {
+        margin: 0 0 20px;
+    }
+    .contacts .container {
+        width: 768px;
+    }
+
+    .contacts-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        width: 768px;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contacts-list {
+        width: 320px;
+    }
+
+    .map-image {
+        margin: 0;
+    }
+
+    .contacts-list-heading {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .contacts-list-description,
+    .contacts-list-facebook,
+    .contacts-list-instagramm,
+    .contacts-list-phone,
+    .contacts-list-email {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contacts .container {
+        width: 1440px;
+    }
+
+    .contacts-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        width: 1440px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contacts-list {
+        width: 600px;
+    }
+
+    .map-image {
+        margin: 0;
+    }
+
+    .contacts-list-heading {
+        font-size: 32px;
+        line-height: 38px;
+        margin: 0 0 25px;
+    }
+
+    .contacts-list-description,
+    .contacts-list-facebook,
+    .contacts-list-instagramm,
+    .contacts-list-phone,
+    .contacts-list-email {
+        font-size: 24px;
+        line-height: 26px;
+    }
+}
+
+
+
+
+
+
+/* HOVER/ACTIVE/FOCUS */
+
+.header-logotype,
+.header-menu-item,
+.header-menu-link,
+.footer-logotype,
+.footer-menu-item,
+.footer-menu-link,
+.social-list-link,
+.social-list-item,
+.policy,
+.contacts-list-phone,
+.contacts-list-email,
+.contacts-list-facebook,
+.contacts-list-instagramm {
+    transition: opacity ease 0.3s;
+}
+
+.header-logotype:hover,
+.header-menu-item:hover,
+.header-menu-link:hover,
+.footer-logotype:hover,
+.footer-menu-item:hover,
+.footer-menu-link:hover,
+.social-list-link:hover,
+.social-list-item:hover,
+.policy:hover,
+.contacts-list-phone:hover,
+.contacts-list-email:hover,
+.contacts-list-facebook:hover,
+.contacts-list-instagramm:hover {
+    opacity: 70%;
+}
+
+.header-logotype:focus,
+.header-menu-item:focus,
+.header-menu-link:focus,
+.footer-logotype:focus,
+.footer-menu-item:focus,
+.footer-menu-link:focus,
+.social-list-link:focus,
+.social-list-item:focus,
+.policy:focus,
+.header-logotype:focus-visible,
+.header-menu-item:focus-visible,
+.header-menu-link:focus-visible,
+.footer-logotype:focus-visible,
+.footer-menu-item:focus-visible,
+.footer-menu-link:focus-visible,
+.social-list-link:focus-visible,
+.social-list-item:focus-visible,
+.policy:focus-visible,
+.header-logotype:focus-within,
+.header-menu-item:focus-within,
+.header-menu-link:focus-within,
+.footer-logotype:focus-within,
+.footer-menu-item:focus-within,
+.footer-menu-link:focus-within,
+.social-list-link:focus-within,
+.social-list-item:focus-within,
+.policy:focus-visible,
+.contacts-list-phone:focus,
+.contacts-list-email:focus,
+.contacts-list-facebook:focus,
+.contacts-list-instagramm:focus,
+.contacts-list-phone:focus-visible,
+.contacts-list-email:focus-visible,
+.contacts-list-facebook:focus-visible,
+.contacts-list-instagramm :focus-visible,
+.contacts-list-phone:focus-within,
+.contacts-list-email:focus-within,
+.contacts-list-facebook:focus-within,
+.contacts-list-instagramm:focus-within {
+    outline: #C06014 solid 1px;
+    outline-offset: 5px;
+    border-color: transparent;
+}
+
+.header-logotype:active,
+.header-menu-item:active,
+.header-menu-link:active,
+.footer-logotype:active,
+.footer-menu-item:active,
+.footer-menu-link:active,
+.social-list-link:active,
+.social-list-item:active,
+.policy:active,
+.contacts-list-phone:active,
+.contacts-list-email:active,
+.contacts-list-facebook:active,
+.contacts-list-instagramm:active {
+    opacity: 50%;
+    outline: none;
 }
