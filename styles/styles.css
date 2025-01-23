@@ -182,7 +182,7 @@ section {
 .page-header {
     background-color: #114D2E;
     color: #FFFFFF;
-    padding: 10px 0;
+    padding: 40px 0 10px 0;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -1914,6 +1914,7 @@ textarea::placeholder {
     line-height: 18px;
     font-family: "Roboto", Arial, sans-serif;
 }
+
 @media (min-width: 768px) {
     .contacts-form .container {
         width: 768px;
@@ -1924,6 +1925,7 @@ textarea::placeholder {
     .contacts-form {
         padding: 60px 30px;
     }
+
     .contacts-form .container {
         width: 1440px;
     }
@@ -1931,13 +1933,13 @@ textarea::placeholder {
     .form__fieldset {
         flex-direction: column;
         gap: 20px;
-    }    
+    }
 
     .form__button {
         width: 360px;
     }
 
-.textarea {
+    .textarea {
         min-height: 150px;
     }
 
@@ -1947,7 +1949,7 @@ textarea::placeholder {
         line-height: 48px;
         margin: 0 0 30px;
     }
-    
+
     .contacts-form-description {
         width: 600px;
         font-size: 24px;
@@ -1970,7 +1972,8 @@ textarea::placeholder {
 .contacts-list-phone,
 .contacts-list-email,
 .contacts-list-facebook,
-.contacts-list-instagramm {
+.contacts-list-instagramm,
+.language-btn  {
     transition: opacity ease 0.3s;
 }
 
@@ -1986,7 +1989,8 @@ textarea::placeholder {
 .contacts-list-phone:hover,
 .contacts-list-email:hover,
 .contacts-list-facebook:hover,
-.contacts-list-instagramm:hover {
+.contacts-list-instagramm:hover,
+.language-btn:hover  {
     opacity: 70%;
 }
 
@@ -2028,7 +2032,10 @@ textarea::placeholder {
 .contacts-list-phone:focus-within,
 .contacts-list-email:focus-within,
 .contacts-list-facebook:focus-within,
-.contacts-list-instagramm:focus-within {
+.contacts-list-instagramm:focus-within,
+.language-btn:focus,
+.language-btn:focus-visible,
+.language-btn:focus-within {
     outline: #C06014 solid 1px;
     outline-offset: 5px;
     border-color: transparent;
@@ -2046,7 +2053,54 @@ textarea::placeholder {
 .contacts-list-phone:active,
 .contacts-list-email:active,
 .contacts-list-facebook:active,
-.contacts-list-instagramm:active {
+.contacts-list-instagramm:active,
+.language-btn:active {
     opacity: 50%;
     outline: none;
+}
+
+
+.page-header .container {
+    position: relative;
+}
+
+.language-switcher {
+    position: absolute;
+    content: "";
+    display: flex;
+    gap: 5px;
+    text-transform: uppercase;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.language-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: #F5F7E0;
+    cursor: pointer;
+}
+
+.language-btn.active {
+    border-bottom: solid 1px #F5F7E0;
+}
+
+
+@media (min-width: 768px) {
+    .language-switcher {
+        top: 0;
+        left: 55px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .language-switcher {
+        top: unset;
+        bottom: 0;
+        left: unset;
+        right: -320px;
+    }
 }
