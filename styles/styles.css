@@ -1330,7 +1330,8 @@ h3 {
     font-size: 14px;
     line-height: 16px;
     padding: 0;
-    margin: 0 0 10px;
+    margin: 0 5px 10px 0;
+
 }
 
 .example-heading {
@@ -1369,7 +1370,8 @@ h3 {
     top: 0;
     right: 0;
 }
-.price-icon::after{
+
+.price-icon::after {
     position: absolute;
     content: attr(data-price);
     color: #D4B057;
@@ -1395,4 +1397,102 @@ h3 {
     font-weight: 600;
     text-align: center;
     color: #114D2E;
+}
+
+@media (min-width: 768px) {
+    .price h2 {
+        align-self: center;
+    }
+
+    .price .container {
+        width: 768px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .example h3 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .example-heading {
+        font-size: 16px;
+        line-height: 16px;
+        width: 300px;
+    }
+
+    .example-description {
+        align-content: center;
+        width: 500px;
+    }
+
+    .example-description li {
+        width: 500px;
+        align-content: center;
+    }
+
+    .example {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .price .container {
+        width: 1440px;
+        gap: 25px;
+    }
+
+    .example h3 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .example-heading {
+        font-size: 24px;
+        line-height: 26px;
+        width: 500px;
+    }
+
+    .example-description {
+        align-content: center;
+        width: 1000px;
+        font-size: 24px;
+        line-height: 26px;
+
+    }
+
+    .example-description li {
+        width: 1000px;
+        align-content: center;
+    }
+
+    .example {
+        width: 1200px;
+    }
+
+    .price-icon {
+        font-size: 16px;
+        line-height: 18px;
+        top: 0;
+        right: 0;
+    }
+
+    .price-icon::after {
+        font-size: 26px;
+        opacity: 20%;
+    }
+
+    .example-description p {
+        margin: 0 0 10px;
+        padding: 0;
+        display: block;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .price-descriprion {
+        font-size: 24px;
+        line-height: 26px;
+    }
 }
