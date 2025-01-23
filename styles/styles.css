@@ -1263,8 +1263,8 @@ h3 {
     min-height: 58px;
     width: 258px;
     padding: 20px 10px 19px;
-    background-color:#C06014;
-    color:#FFFFFF;
+    background-color: #C06014;
+    color: #FFFFFF;
     border: none;
     border-radius: 2px;
     font-size: 20px;
@@ -1312,8 +1312,87 @@ h3 {
         width: 770px;
         margin: 0 0 40px;
     }
-    
+
     .services-form-container {
         padding: 60px 20px;
-    }    
+    }
+}
+
+/* PRICE */
+
+.price .container {
+    align-content: center;
+    width: 320px;
+    gap: 15px;
+}
+
+.example h3 {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.example-heading {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0 0 10px;
+    width: 220px;
+}
+
+.example-description {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.example-description li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    width: 290px;
+}
+
+.example {
+    position: relative;
+}
+
+.price-icon {
+    position: absolute;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #C06014;
+    top: 0;
+    right: 0;
+}
+.price-icon::after{
+    position: absolute;
+    content: attr(data-price);
+    color: #D4B057;
+    font-size: 20px;
+    opacity: 20%;
+    width: max-content;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.example-description p {
+    margin: 0 0 10px;
+    padding: 0;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.price-descriprion {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #114D2E;
 }
